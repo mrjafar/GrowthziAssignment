@@ -1,6 +1,4 @@
-import React from 'react'
-import logo from '../../assets/logo.png';
-import { FaChevronRight } from 'react-icons/fa';
+import logo from '../../assets/Logo.png';
 import { GoChevronRight } from 'react-icons/go';
 import { TiSocialDribbble, TiSocialFacebook, TiSocialInstagram, TiSocialPinterest, TiSocialTwitter } from 'react-icons/ti';
 

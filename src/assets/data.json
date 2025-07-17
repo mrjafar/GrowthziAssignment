@@ -1,0 +1,26 @@
+[
+    {
+        "icon": "./gym.png",
+        "title": "Workout & Yoga Rooms",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "btn": "Discover More"
+    },
+    {
+        "icon": "./spa.png",
+        "title": "Spa, Massage & Sauna",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "btn": "Discover More"
+    },
+    {
+        "icon": "./breakfast.png",
+        "title": "Multiple Cuisines & Beverages",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "btn": "Discover More"
+    },
+    {
+        "icon": "./pool.png",
+        "title": "In Door Swimming Pool",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "btn": "Discover More"
+    }
+]

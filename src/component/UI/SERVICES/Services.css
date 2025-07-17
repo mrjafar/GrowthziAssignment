@@ -1,0 +1,231 @@
+.services-section {
+  width: 100%;
+  /* height: 100vh; */
+  margin-top: 10rem;
+  background-color: var(--background-color);
+  padding: 2rem 3rem;
+  & .line {
+    font-size: 4rem;
+    color: var(--Gold);
+  }
+
+  h3 {
+    font-size: 2.4rem;
+    font-weight: 300;
+    line-height: 100%;
+    letter-spacing: 24%;
+    text-transform: uppercase;
+    color: var(--Gold);
+  }
+
+  .service-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+
+    & h1 {
+      width: 70%;
+      font-size: 6.4rem;
+      font-weight: 400;
+      font-family: "Forum";
+      line-height: 126%;
+      letter-spacing: 0%;
+      text-transform: capitalize;
+    }
+    p {
+      position: absolute;
+      top: 55%;
+      right: 0;
+      width: 45%;
+      font-family: "Poppins";
+      font-size: 1.8rem;
+      font-weight: 300;
+      line-height: 100%;
+      letter-spacing: 0;
+      text-align: right;
+    }
+  }
+
+  .services-cards {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+    background-color: #d9d9d9;
+
+    .service-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      /* gap: 2rem; */
+      align-items: center;
+    }
+
+    .service-card {
+      background-color: var(--main-color);
+      padding: 5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 2rem;
+
+      figure {
+        height: 45px;
+        width: 45px;
+        img {
+          width: 100%;
+        }
+      }
+
+      h2 {
+        font-family: "Forum";
+        font-size: 2.4rem;
+        font-weight: 400;
+        color: var(--primary-text-color);
+      }
+
+      p {
+        font-family: "Poppins";
+        font-size: 1.4rem;
+        font-weight: 300;
+        color: var(--primary-text-color);
+      }
+
+      button {
+        width: fit-content;
+        font-size: 1.6rem;
+        font-style: italic;
+        font-weight: 400;
+        font-family: "Poppins";
+        border: none;
+        background-color: transparent;
+        padding: 1rem 2.5rem;
+        margin-top: 2rem;
+        color: var(--primary-text-color);
+        border-top: 1px solid var(--background-color);
+        border-bottom: 1px solid var(--background-color);
+        position: relative;
+      }
+      &.odd button {
+        align-self: flex-start;
+        text-align: left;
+      }
+
+      &.even button {
+        align-self: flex-end;
+        text-align: right;
+      }
+
+      .discover-icon {
+        position: absolute;
+        top: 33%;
+        right: 1%;
+      }
+    }
+
+    .blank {
+      height: 100%;
+    }
+  }
+}
+
+.editable-heading {
+  position: relative;
+  /* display: inline-block; */
+}
+
+.service-edit-icon {
+  width: 100%;
+  position: absolute;
+  top: 10%;
+  right: -10%;
+  display: none;
+  cursor: pointer;
+  font-size: 2rem;
+  color: var(--main-color); /* Optional */
+}
+
+.editable-heading:hover .service-edit-icon {
+  display: inline;
+  cursor: pointer;
+  opacity: 1;
+}
+
+.custom-modal {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  height: auto;
+  background: white;
+  padding: 2rem;
+  margin: auto;
+  border-radius: 10px;
+  /* border: 2px solid var(--Gold); */
+  position: relative;
+  top: 20%;
+  outline: none;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+
+  form {
+    width: 100%;
+
+    label {
+      font-size: 3rem;
+      font-weight: 400;
+      font-weight: 500;
+      color: #000;
+      letter-spacing: 0%;
+      line-height: 100%;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 0.6rem 1rem;
+      font-size: 1.4rem;
+      border: 1.6px solid var(--primary-dark-grey);
+      outline: var(--primary-dark-grey);
+      border-radius: 10px;
+      /*background-color: var(--primary-dark-grey);
+      */
+      color: var(--main-color);
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      -ms-border-radius: 10px;
+      -o-border-radius: 10px;
+    }
+
+    & .save-btn {
+      font-size: 1.6rem;
+      color: var(--primary-text-color);
+      background-color: rgb(13, 255, 0);
+      padding: 0.5rem;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
+      -webkit-border-radius: 8px;
+      -moz-border-radius: 8px;
+      -ms-border-radius: 8px;
+      -o-border-radius: 8px;
+    }
+  }
+
+  & .close-icon {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 2.4rem;
+    color: var(--main-color);
+    cursor: pointer;
+  }
+}
+.service-title .custom-overlay {
+  background-color: rgba(0, 0, 0, 0.643);
+  backdrop-filter: blur(5px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}

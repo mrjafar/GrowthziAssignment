@@ -19,6 +19,12 @@ html {
   /* text color---------- */
   --primary-text-color: #ffffff;
   --primary-dark-grey: #575656;
+  --linear-background: linear-gradient(
+    to top,
+    var(--main-color) 0%,
+    #aaa 50%,
+    var(--main-color) 100%
+  );
 }
 body {
   background-color: var(--background-color);
@@ -28,7 +34,8 @@ li {
   list-style: none;
   cursor: pointer;
 }
-nav,.services-section {
+nav,
+.services-section {
   max-width: 1200px;
   margin: 0 auto;
 }

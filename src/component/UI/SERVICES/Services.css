@@ -136,8 +136,8 @@
 .service-edit-icon {
   width: 100%;
   position: absolute;
-  top: 10%;
-  right: -10%;
+  top: 9%;
+  right: -16%;
   display: none;
   cursor: pointer;
   font-size: 2rem;
